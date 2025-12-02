@@ -10,7 +10,6 @@
         <Profile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}">
             <AllAppsList>
                 <AllowedApps>
-                    <App AppUserModelId="Microsoft.RemoteDesktop.WPF" />
                     <App DesktopAppPath="%ProgramFiles%\Remote Desktop\msrdcw.exe" />
                     <App AppUserModelId="MicrosoftCorporationII.Windows365_8wekyb3d8bbwe!Windows365" />
                     <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
@@ -61,7 +60,7 @@
     </Profiles>
     <Configs>
         <Config>
-            <AutoLogonAccount rs5:DisplayName="Kiosk" />
+            <AutoLogonAccount rs5:DisplayName="Kiosk VdS" />
             <DefaultProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
         </Config>
     </Configs>
