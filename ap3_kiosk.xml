@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                             xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+                             xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config" 
+                             xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+                             xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+                             xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+                             xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+    <Profiles>
+        <Profile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App AppUserModelId="Microsoft.RemoteDesktop.WPF" />
+                    <App DesktopAppPath="%ProgramFiles%\Remote Desktop\msrdcw.exe" />
+                    <App AppUserModelId="MicrosoftCorporationII.Windows365_8wekyb3d8bbwe!Windows365" />
+                    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
+                    <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
+                    <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
+                    <App DesktopAppPath="%ProgramFiles%\TeamViewer\TeamViewer.exe" />
+                    <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" /> 
+                </AllowedApps>
+            </AllAppsList>
+            <rs5:FileExplorerNamespaceRestrictions>
+            </rs5:FileExplorerNamespaceRestrictions>
+            <v5:StartPins>
+                <![CDATA[
+                    {
+                        "applyOnce":false, "pinnedList": [ 
+                            {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Remote Desktop.lnk"}, 
+                            {"packagedAppId": "MicrosoftCorporationII.Windows365_8wekyb3d8bbwe!Windows365"},
+                            {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"}, 
+                            {"packagedAppId": "windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"}, 
+                            {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\TeamViewer.lnk"} 
+                        ] 
+                    }
+                ]]>
+            </v5:StartPins>
+            <Taskbar ShowTaskbar="true" />
+            <v5:TaskbarLayout>
+                <![CDATA[
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <LayoutModificationTemplate
+                        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+                        xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+                        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+                        xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+                        Version="1">
+                    <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+                        <defaultlayout:TaskbarLayout>
+                        <taskbar:TaskbarPinList>
+                            <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Remote Desktop.lnk"/>
+                            <taskbar:UWA AppUserModelID="MicrosoftCorporationII.Windows365_8wekyb3d8bbwe!Windows365" />
+                            <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"/>
+                        </taskbar:TaskbarPinList>
+                        </defaultlayout:TaskbarLayout>
+                    </CustomTaskbarLayoutCollection>
+                    </LayoutModificationTemplate>
+                ]]>
+            </v5:TaskbarLayout>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <AutoLogonAccount rs5:DisplayName="Kiosk" />
+            <DefaultProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
