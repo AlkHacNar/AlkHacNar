@@ -11,9 +11,13 @@
             <AllAppsList>
                 <AllowedApps>
                     <App AppUserModelId="MicrosoftCorporationII.Windows365_8wekyb3d8bbwe!Windows365" />
+                    <App DesktopAppPath="%ProgramFiles%\WindowsApps\MicrosoftCorporationII.Windows365_*_8wekyb3d8bbwe\Windows365.exe" />
+                    <App DesktopAppPath="%ProgramFiles%\WindowsApps\MicrosoftCorporationII.Windows365_*_8wekyb3d8bbwe\msrdc\msrdc.exe" />
+                  
                     <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" />
                     <App DesktopAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge_proxy.exe" />
                     <App AppUserModelId="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe!App"/>
+                  
                     <App DesktopAppPath="%ProgramFiles%\TeamViewer\TeamViewer.exe" />
                     <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" /> 
                 </AllowedApps>
@@ -57,10 +61,14 @@
     </Profiles>
     <Configs>
         <Config>
-            <Account>AzureAD\myuser@tenant.org</Account>
+            <AutoLogonAccount rs5:DisplayName="Kiosk" />
             <DefaultProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
+        </Config>
+        <Config>
+            <v3:GlobalProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
         </Config>
     </Configs>
 </AssignedAccessConfiguration>
+
 
 
