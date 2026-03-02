@@ -64,11 +64,9 @@
             <AutoLogonAccount rs5:DisplayName="Kiosk" />
             <DefaultProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
         </Config>
-        <Config>
-            <v3:GlobalProfile Id="{377435b7-eee7-4e17-80f8-3b8c7b929d13}"/>
-        </Config>
     </Configs>
 </AssignedAccessConfiguration>
+
 
 
 
