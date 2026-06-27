@@ -1,5 +1,5 @@
 # Some of my scripts and other files
-feel free to use them, if you want. They are cleared of any information, but some logic may my own. So feel free to hit me up on reddit, likedin or here.
+feel free to use them, if you want. They are cleared of any information, but some logic may my own. So feel free to hit me up on reddit, X, likedin or here.
 
 [![License][license-badge]][license]
 
