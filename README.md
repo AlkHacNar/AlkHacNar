@@ -6,4 +6,4 @@ feel free to use them, if you want
 This repository is licensed with an MIT license; however, the icons themselves remain the property of their respective software vendors.
 
 [license-badge]: https://img.shields.io/github/license/AlkHacNar/AlkHacNar.svg?style=flat-square
-[license]: https://github.com/AlkHacNar/WinGet-Icons/blob/main/LICENSE
+[license]: https://github.com/AlkHacNarAlkHacNar/blob/main/LICENSE
