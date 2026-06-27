@@ -1,6 +1,9 @@
 #Some of my scripts and other files
 feel free to use them, if you want
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License][license-badge]][license]
 
 This repository is licensed with an MIT license; however, the icons themselves remain the property of their respective software vendors.
+
+[license-badge]: https://img.shields.io/github/license/AlkHacNar/AlkHacNar.svg?style=flat-square
+[license]: https://github.com/AlkHacNar/WinGet-Icons/blob/main/LICENSE
