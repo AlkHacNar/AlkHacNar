@@ -1,5 +1,5 @@
-$AppName = "Adobe Acrobat (64-bit)*"
-$AppVersion = "26.001.21691"
+$AppName = 'Adobe Acrobat (64-bit)*'
+$AppVersion = '26.001.21691'
 $Reg = Get-ChildItem -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall","HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall" | Get-ItemProperty | Where-Object {$_.DisplayName -ilike "$($AppName)" } | Select-Object -Property DisplayName, DisplayVersion, PSChildName
 if($Reg)
 {
