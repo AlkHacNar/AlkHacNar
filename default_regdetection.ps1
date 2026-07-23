@@ -5,7 +5,11 @@ if($Reg)
 {
     if($Reg.GetType().Name -eq "PSCustomObject")
     {
-        if([Version](Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$($Reg.PSChildName)","HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$($Reg.PSChildName)" -Name DisplayVersion -ea SilentlyContinue) -eq [version]"$($AppVersion)"){Write-Host "Installed";Exit 0}}
-        else{foreach($App in $Reg){if([Version](Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$($App.PSChildName)","HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$($App.PSChildName)" -Name DisplayVersion -ea SilentlyContinue) -eq [version]"$($AppVersion)"){Write-Host "Installed";Exit 0}}
+        if([Version](Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$($Reg.PSChildName)","HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$($Reg.PSChildName)" -Name DisplayVersion -ea SilentlyContinue) -eq [version]"$($AppVersion)"){Write-Host "Installed";Exit 0}
     }
+        else
+        {
+            foreach($App in $Reg)
+            {if([Version](Get-ItemPropertyValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$($App.PSChildName)","HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$($App.PSChildName)" -Name DisplayVersion -ea SilentlyContinue) -eq [version]"$($AppVersion)"){Write-Host "Installed";Exit 0}}
+        }
 }
